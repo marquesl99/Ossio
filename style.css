@@ -1,0 +1,271 @@
+/* Estilização geral */
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    margin: 0;
+    padding: 0;
+    background-image: url('midias/bg_ossio.jpg');
+    letter-spacing: 2px;
+}
+
+/* Header estilizado */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(251, 251, 252, 0.9);
+    padding: 40px 50px;
+    height: 140px;
+    color: #2A5D7B;
+}
+
+header img {
+    height: 250px;
+    width: 250px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    font-family: 'Poetsen One', sans-serif;
+    margin: 0
+}
+
+/* Navegação */
+nav {
+    background-color: rgba(251, 251, 252, 0.9);
+    font-family: 'Poetsen One', sans-serif;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: #2A5D7B;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #A2E8E0;
+}
+
+/* Main content */
+main {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+}
+
+/* Seções */
+section {
+    background-color: #FFFFFF;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 34px;
+    color: #2A5D7B;
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 10px;
+    color: #2A5D7B;
+}
+
+/* Estilização da seção de vídeo */
+#video {
+    background-color: #FFFFFF;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    
+}
+
+#video h2 {
+    font-size: 34px;
+    color: #2A5D7B;
+    margin-bottom: 15px;
+}
+
+#video p {
+    margin-top: 10px;
+    color: #2A5D7B;
+}
+
+#video video {
+    width: 900px; 
+    height: 600px;
+    position: relative;
+    overflow: hidden; 
+}
+
+/* Estilização do formulário de contato */
+#contato form {
+    display: block;
+    flex-direction: column;
+}
+
+#contato label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #2A5D7B;
+}
+
+#contato input,
+#contato textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #E5E5E5;
+    border-radius: 5px;
+    
+}
+
+#mensagem {
+    width: 92%;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+#contato button {
+    padding: 10px 20px;
+    background-color: #2A5D7B;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contato button:hover {
+    background-color: #77C9C0;
+}
+
+/* Estilização dos fisioterapeutas */
+.fisioterapeuta {
+    margin-bottom: 20px;
+    background-color: #F9F9F9;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.fisioterapeuta img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.fisioterapeuta h3 {
+    margin-bottom: 5px;
+    color: #2A5D7B;
+}
+
+.fisioterapeuta p {
+    margin-bottom: 10px;
+    color: #2A5D7B;
+}
+
+.fisioterapeuta button {
+    padding: 10px 20px;
+    background-color: #2A5D7B;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.fisioterapeuta button:hover {
+    background-color: #77C9C0;
+}
+
+/* Estilização do rodapé */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #2A5D7B;
+    color: #FFFFFF;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    color: #E5E5E5;
+    font-size: 20px;
+}
+
+hr {
+    margin: 20px 0;
+    border-top: 1px solid #E5E5E5;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    header, nav ul {
+        flex-direction: column;
+    }
+
+    nav ul {
+        align-items: center;
+    }
+
+    main {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .fisioterapeuta img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .video {
+        width: 80%;
+        height: auto;
+        position: relative;
+    }
+
+    #video {
+        padding: 0;
+        max-width: 100%;
+
+    .video-container {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            padding-top: 56.25%; 
+        }
+        
+    .video-container video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        
+    }
+}
