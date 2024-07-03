@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendar Consulta</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Estilização do formulário */
+form {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+    border: none;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-size: 24px;
+    color: #2A5D7B;
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #2A5D7B;
+}
+
+input[type="text"],
+input[type="tel"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #E5E5E5;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #2A5D7B;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #77C9C0;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-family: 'Poetsen One', sans-serif;
+    margin: 0;
+    color: #2A5D7B; 
+}
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Agendar Consulta</h1>
+        <form action="submit_form.html" method="post">
+            <fieldset>
+                <legend>Informações Pessoais</legend>
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required>
+
+                <label for="cep">CEP:</label>
+                <input type="text" id="cep" name="cep" required>
+
+                <label for="cidade">Cidade:</label>
+                <input type="text" id="cidade" name="cidade" required>
+
+                <label for="bairro">Bairro:</label>
+                <input type="text" id="bairro" name="bairro" required>
+
+                <label for="rua">Rua:</label>
+                <input type="text" id="rua" name="rua" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Forma de Pagamento</legend>
+                <label for="pagamento">Escolha uma forma de pagamento:</label>
+                <select id="pagamento" name="pagamento" required>
+                    <option value="">Selecione...</option>
+                    <option value="pix">PIX</option>
+                    <option value="credito">Cartão de Crédito</option>
+                    <option value="debito">Cartão de Débito</option>
+                </select>
+            </fieldset>
+
+            <input type="submit" value="Pagamento">
+        </form>
+    </main>
+</body>
+</html>
